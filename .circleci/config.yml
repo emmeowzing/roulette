@@ -9,13 +9,11 @@ orbs:
 
 
 workflows:
-  base-python:
+  roulette:
     jobs:
       - dynamic/continue:
           context: circleci
-          modules: |
-            /scripts
-            /base_python
+          auto-detect: true
 
       - general/github-release:
           context: github

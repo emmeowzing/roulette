@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "base_python"
+name = "slack-roulette"
 version = "0.0.1"
-description = "Example base Python template project"
+description = "Slack bot that auto-assigns and pings teams and/or groups channel threads"
 authors = ["Emma Doyle <emma@premiscale.com>"]
 maintainers = ["Emma Doyle <emma@premiscale.com>"]
 license = "GPL-3.0-or-later"
 readme = "README.md"
-packages = [{include = "base_python"}]
+packages = [{include = "roulette"}]
 include = [
   "LICENSE"
 ]
@@ -27,4 +27,4 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-base_python = "base_python.base_python.test:cli"
+roulette = "roulette.roulette.main:cli"

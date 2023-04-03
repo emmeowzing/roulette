@@ -1,3 +1,3 @@
-# base-python
+# Slack roulette bot
 
-Base Python repo for getting started with a new Python package with default configuration files for PremiScale, Inc.
+Slack bot that auto-assigns and pings teams and/or groups channel threads.
