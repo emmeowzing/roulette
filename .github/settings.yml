@@ -1,10 +1,10 @@
 _extends: .github
 
 repository:
-  name: slack-roulette
-  description: Slack bot that auto-assigns and pings teams and/or groups channel threads.
+  name: roulette
+  description: Bot that auto-assigns and pings teams and/or groups channel threads on Slack, and hopefully eventually Discord and Microsoft Teams
   homepage: https://github.com/bjd2385/slack-roulette
 
   # A comma-separated list of topics to set on the repository
-  topics: python, slack, roulette, chat, threads
+  topics: python, slack, teams, discord, bot, roulette, chat, threads
   private: false
