@@ -11,7 +11,7 @@ import sys
 import os
 
 
-__version__ = meta.version('premiscale')
+__version__ = meta.version('slack-roulette')
 
 log = logging.getLogger(__name__)
 
