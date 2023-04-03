@@ -9,7 +9,7 @@ orbs:
 
 
 workflows:
-  roulette:
+  slack-roulette:
     jobs:
       - dynamic/continue:
           context: orb-publishing
