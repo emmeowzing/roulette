@@ -12,7 +12,7 @@ workflows:
   roulette:
     jobs:
       - dynamic/continue:
-          context: circleci
+          context: orb-publishing
           auto-detect: true
 
       - general/github-release:
