@@ -40,6 +40,25 @@ def cli() -> None:
         help='Specify a Slack token with the CLI. Can be set to environment variable names as well.'
     )
 
+    bot_type = parser.add_mutually_exclusive_group(
+        required=True
+    )
+
+    bot_type.add_argument(
+        '--slack', default=False, action='store_true', type=bool,
+        help='Enable slack bot.'
+    )
+
+    bot_type.add_argument(
+        '--teams', default=False, action='store_true', type=bool,
+        help='Enable Microsoft Teams bot.'
+    )
+
+    bot_type.add_argument(
+        '--discord', default=False, action='store_true', type=bool,
+        help='Enable discord bot.'
+    )
+
     args = parser.parse_args()
 
         # Configure logger.
