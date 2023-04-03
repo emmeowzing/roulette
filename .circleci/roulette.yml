@@ -35,12 +35,13 @@ commands:
 jobs:
   pylint:
     description: PyLint
-    docker:
-      - image: docker.ops.premiscale.com/executors/python-3-10:v1.0.1
-        auth:
-          username: $DOCKER_USERNAME
-          password: $DOCKER_PASSWORD
-    resource_class: << parameters.resource-class >>
+    # docker:
+    #   - image: docker.ops.premiscale.com/executors/python-3-10:v1.0.1
+    #     auth:
+    #       username: $DOCKER_USERNAME
+    #       password: $DOCKER_PASSWORD
+    # resource_class: << parameters.resource-class >>
+    executor: python-3-10
     parameters:
       resource-class:
         type: enum
@@ -81,11 +82,12 @@ jobs:
 
   release-twine-setup-py:
     description: twine upload
-    docker:
-      - image: docker.ops.premiscale.com/executors/python-3-10:v1.0.1
-        auth:
-          username: $DOCKER_USERNAME
-          password: $DOCKER_PASSWORD
+    # docker:
+    #   - image: docker.ops.premiscale.com/executors/python-3-10:v1.0.1
+    #     auth:
+    #       username: $DOCKER_USERNAME
+    #       password: $DOCKER_PASSWORD
+    executor: python-3-10
     resource_class: << parameters.resource-class >>
     environment:
       TWINE_NON_INTERACTIVE: true
