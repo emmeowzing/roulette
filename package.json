@@ -1,7 +1,7 @@
 {
-  "name": "base_python",
-  "description": "Example base Python template project",
-  "repository": "git@github.com:premiscale/base-python.git",
+  "name": "roulette",
+  "description": "Slack bot that auto-assigns and pings teams and/or groups channel threads",
+  "repository": "git@github.com:premiscale/slack-roulette.git",
   "author": "Emma Doyle <emma@premiscale.com>",
   "license": "GPLv3",
   "private": true,

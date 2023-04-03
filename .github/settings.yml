@@ -1,10 +1,10 @@
 _extends: .github
 
 repository:
-  name: base
-  description: Base repository with default settings and configs
-  homepage: https://github.com/premiscale/base-python
+  name: slack-roulette
+  description: Slack bot that auto-assigns and pings teams and/or groups channel threads.
+  homepage: https://github.com/bjd2385/slack-roulette
 
   # A comma-separated list of topics to set on the repository
-  topics: python, pypi
-  private: true
+  topics: python, slack, roulette, chat, threads
+  private: false

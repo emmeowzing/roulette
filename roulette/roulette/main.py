@@ -1,11 +1,9 @@
 """
-Example CLI that blocks.
+Slack bot that auto-assigns and pings teams and/or groups channel threads.
 """
 
 
 import time
-
-from base_python.alternate.importable import hello
 
 
 def cli() -> None:
@@ -13,7 +11,7 @@ def cli() -> None:
     Print hello over and over again.
     """
     while True:
-        print(hello())
+        print('Hello')
         time.sleep(10)
 
 
